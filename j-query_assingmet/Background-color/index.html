@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 550px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .box {
+            height: 300px;
+            width: 170px;
+            /* border: 2px solid; */
+        }
+
+        .box-1 {
+            background-color: #ff3333;
+        }
+
+        .box-2 {
+            background-color: #00ffff;
+        }
+
+        .box-3 {
+            background-color: #33ff33;
+        }
+
+        .box-4 {
+            background-color: #202020;
+        }
+
+        .box-5 {
+            background-color:#ff66ff;
+        }
+
+        .box-6 {
+            background-color: #990000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".box-1").click(function () {
+            $(".main").css("background-color","#ff3333")
+        })
+    })
+    $(document).ready(function () {
+        $(".box-2").click(function () {
+            $(".main").css("background-color","#00ffff")
+        })
+    })
+    $(document).ready(function () {
+        $(".box-3").click(function () {
+            $(".main").css("background-color","#33ff33")
+        })
+    })
+    $(document).ready(function () {
+        $(".box-4").click(function () {
+            $(".main").css("background-color","#202020")
+        })
+    })
+    $(document).ready(function () {
+        $(".box-5").click(function () {
+            $(".main").css("background-color","#ff66ff")
+        })
+    })
+    $(document).ready(function () {
+        $(".box-6").click(function () {
+            $(".main").css("background-color","#990000")
+        })
+    })
+</script>
+
+</html>

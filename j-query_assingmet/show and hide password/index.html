@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* height: 600px; */
+            width: 100%;
+            background-color: #009999;
+        }
+
+        .content {
+            background-color: white;
+            border: 2px solid;
+            padding: 10px;
+            color: #009999;
+            width: 500px;
+            margin-left: 350px;
+            margin-top: 150px;
+            text-align: center;
+
+        }
+
+        .input {
+            background-color: white;
+            padding: 10px;
+            width: 230px;
+            margin-left: 500px;
+            margin-top: 50px;
+            display: flex;
+            gap: 6px;
+        }
+        button{
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>Show and Hide Password</h1>
+        </div>
+        <div class="input">
+            <div>
+                <input type="password">
+            </div>
+            <button>Show</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            var value = $("input");
+            if (value.attr("type") == "password") {
+                console.log(11);
+                value.attr("type", "text")
+                $("button").text("Hide")
+
+            } else {
+                value.attr("type", "password")
+                $("button").text("Show")
+            }
+
+        })
+    })
+</script>
+
+</html
